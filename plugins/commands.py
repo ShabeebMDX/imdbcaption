@@ -206,16 +206,6 @@ async def bot_info(bot, message):
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Jinn-Of-Telegram/Media-Search-bot-V2'>Click here</a>\nUpdate Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
-@Client.on_message(filters.command('help'))
-async def bot_info(bot, message):
-    buttons = [
-        [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
-        ]
-        ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️ \n\n Use Below Buttons To Get Support Group / Update channel Links \n\n Use /commands To Know More About Commands</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
     try:
@@ -314,7 +304,7 @@ async def broadcast_handler_open(_, m):
     else:
         await broadcast(m, db)
 
-@Client.on_message(filters.command('commands'))
+@Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
