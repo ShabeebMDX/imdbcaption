@@ -294,16 +294,6 @@ async def showid(client, message):
             quote=True
         )  
 
-@Client.on_message(filters.private & filters.command("broadcast"))
-async def broadcast_handler_open(_, m):
-    if m.from_user.id not in ADMIN_ID:
-        await m.delete()
-        return
-    if m.reply_to_message is None:
-        await m.delete()
-    else:
-        await broadcast(m, db)
-
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
