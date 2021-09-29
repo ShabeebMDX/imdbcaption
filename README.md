@@ -1,22 +1,3 @@
-
-
-
-# Repo Under Maintainence Wait Guys 😞
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Modified Version Of [Media Search bot](https://github.com/subinps/Media-Search-bot)
 
 ## Example Bot [Imdb Bot](https://t.me/Ma_autofilterbot)
@@ -37,6 +18,9 @@
 ## Installation
 
 ### Easy Way
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jinn-of-telegram/Media-Search-bot-v2)
+
 ### Hard Way
 
 ```bash
@@ -56,7 +40,6 @@ python3 bot.py
 Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) file
 
 ### Thank You [Subinps](https://t.me/Subinps_bot)
-### Thank You [Shamil || SmL](https://t.me/shamilnelli)
 ### Thank You [Aswin](https://github.com/Aswin-TG)
 
 ## Variables
